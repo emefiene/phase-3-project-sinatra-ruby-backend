@@ -47,11 +47,11 @@ class AppointmentController < Sinatra::Base
     
     private
     def id_params
-      {time:params[:time], patient_id:params[:id], date:params[:date], physician_id:params[:id]}
+      {  patient_id:params[:id],date:params[:date], physician_id:params[:physician_id]}
     end
 
     def get_params
-      {image_url:params[:image_url], name:params[:name], specialty:params[:specialty], phone:params[:phone]}
+      {image_url:params[:image_url], name:params[:name], specialty:params[:specialty]}
     end
     
 end

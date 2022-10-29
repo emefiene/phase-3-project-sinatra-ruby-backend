@@ -24,7 +24,7 @@ class PhysicianController < Sinatra::Base
     
     private
     def get_params
-      {image_url:params[:image_url], name:params[:name], specialty:params[:specialty], phone:params[:phone]}
+      {image_url:params[:image_url], name:params[:name], specialty:params[:specialty]}
     end
   end
   

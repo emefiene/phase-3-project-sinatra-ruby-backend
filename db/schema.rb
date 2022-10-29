@@ -13,7 +13,6 @@
 ActiveRecord::Schema.define(version: 2022_10_23_161020) do
 
   create_table "appointments", force: :cascade do |t|
-    t.datetime "time"
     t.datetime "date"
     t.integer "patient_id"
     t.integer "physician_id"
@@ -24,15 +23,13 @@ ActiveRecord::Schema.define(version: 2022_10_23_161020) do
     t.string "email"
     t.string "address"
     t.string "age"
-    t.string "phone"
-    t.string "symptoms"
+    t.integer "phone"
   end
 
   create_table "physicians", force: :cascade do |t|
     t.string "image_url"
     t.string "name"
     t.string "specialty"
-    t.integer "phone"
   end
 
   create_table "reviews", force: :cascade do |t|

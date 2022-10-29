@@ -7,7 +7,7 @@ $patient_data = [
         email:"fe11@yahoo.com",
         address:"534 Arlington, TX 76006",
         age:"70 years",
-        phone:"(999)-999-9999"
+   
        
     },
     {
@@ -16,7 +16,7 @@ $patient_data = [
         email:"judy@yahoo.com",
         address:"5347 Arlington, TX 76006",
         age:"65 years",
-        phone:"(999)-545-8765"
+       
        
     },
     {
@@ -25,7 +25,7 @@ $patient_data = [
         email:"mary@yahoo.com",
         address:"523 Arlington, TX 76006",
         age:"45 years",
-        phone:"(999)-999-8799"
+       
 
     },
        
@@ -35,7 +35,7 @@ $patient_data = [
         email:"scot@yahoo.com",
         address:"432 Arlington, TX 76006",
         age:"50years",
-        phone:"(999)-999-4329"
+        
        
     },
     {
@@ -44,7 +44,7 @@ $patient_data = [
         email:"frank@yahoo.com",
         address:"3223 Arlington, TX 76006",
         age:"63 years",
-        phone:"(999)-999-4219"
+      
         
     },
     {
@@ -53,7 +53,7 @@ $patient_data = [
         email:"alex@yahoo.com",
         address:"7646 Arlington, TX 76006",
         age:"75 years",
-        phone:"(999)-999-9999"
+    
        
     },
     {
@@ -62,7 +62,7 @@ $patient_data = [
         email:"nicole@yahoo.com",
         address:"321 Arlington, TX 76006",
         age:"67 years",
-        phone:"(999)-545-8765"
+      
       
     },
     {
@@ -71,7 +71,7 @@ $patient_data = [
         email:"victoria@yahoo.com",
         address:"523 Arlington, TX 76006",
         age:"74 years",
-        phone:"(999)-999-8799"
+        
       
     },
     {
@@ -80,7 +80,7 @@ $patient_data = [
         email:"Obi@yahoo.com",
         address:"400 Arlington, TX 76006",
         age:"48 ears",
-        phone:"(999)-999-3219"
+      
     
     },
     {
@@ -88,7 +88,7 @@ $patient_data = [
         email:"legend@yahoo.com",
         address:"2111 Arlington, TX 76006",
         age:"68 years",
-        phone:"(999)-999-5439"
+        
        
     }
 ]
@@ -124,21 +124,21 @@ $physician_data = [
 
     },
 ]
-$appointment_data = [
-    {
-        date: Time.current,
-        patient_id:2,
-        physician_id:3
+# # $appointment_data = [
+# #     {
+# #         date: Time.current,
+# #         patient_id:2,
+# #         physician_id:3
 
-    },
-    {
-        date: Time.current,
-        patient_id:3,
-        physician_id:2
+# #     },
+# #     {
+# #         date: Time.current,
+# #         patient_id:3,
+# #         physician_id:2
 
-    },
+# #     },
     
-]
+# ]
 $review_data = [
     {
         comments: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -164,7 +164,7 @@ $review_data = [
 
 
 $patient_data.each{|p| Patient.create(p)}
-$appointment_data.each{|a| Appointment.create(a)}
+# $appointment_data.each{|a| Appointment.create(a)}
 $review_data.each{|r| Review.create(r)}
 $physician_data.each{|h| Physician.create(h)}
 
