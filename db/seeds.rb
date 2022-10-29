@@ -97,144 +97,47 @@ $physician_data = [
         image_url: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/131287779_10214795889050848_2924764281345182409_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=4HHyc8CD_DIAX9KK4au&_nc_ht=scontent-dfw5-1.xx&oh=00_AT-yjfaj_PYj7xUvoUKFdoLWwiKqmmmvHmI4Y1PtmCdXgg&oe=636782AA",
         name: "Pius Emefiene",
         specialty: "Primary Physician",
-        phone: "(817)-555-5555"
 
     },
     {
         image_url: "https://st.depositphotos.com/1891797/4154/i/600/depositphotos_41544247-stock-photo-doctor-in-a-white-coat.jpg",
         name: "Gerald Michael",
         specialty: "Internal Medicine",
-        phone: "(817)-555-0000"
 
     },
     {
         image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRttr7zIrrUvm6rdLfldnfbFkKMoZwUJNjHKg&usqp=CAU",
         name: "Alexander Ikemba",
         specialty: "Cardiology",
-        phone: "(817)-555-5555"
 
     },
     {
         image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqzHrqlHIYftvTH4K209tde5U99wF3FzOOw&usqp=CAU",
         name: "Naomi Chidera",
         specialty: "General Surgery",
-        phone: "(817)-555-0000"
 
     },
     {
         image_url: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/131287779_10214795889050848_2924764281345182409_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=4HHyc8CD_DIAX9KK4au&_nc_ht=scontent-dfw5-1.xx&oh=00_AT-yjfaj_PYj7xUvoUKFdoLWwiKqmmmvHmI4Y1PtmCdXgg&oe=636782AA",
         name: "Legend Zion",
         specialty: "Internal Medicine",
-        phone: "(817)-555-0000"
 
-    }
+    },
 ]
 $appointment_data = [
     {
-        time: Time.current,
         date: Time.current,
         patient_id:2,
         physician_id:3
 
     },
     {
-        time: Time.current,
         date: Time.current,
         patient_id:3,
         physician_id:2
 
     },
-    {
-        time: Time.current,
-        date: Time.now,
-        patient_id:4,
-        physician_id:5
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:1,
-        physician_id:4
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:10,
-        physician_id:1
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:5,
-        physician_id:3
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:3,
-        physician_id:2
-
-    },
-    {
-        time: Time.current,
-        date: Time.now,
-        patient_id:5,
-        physician_id:5
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:6,
-        physician_id:4
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:7,
-        physician_id:1
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:8,
-        physician_id:3
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:3,
-        physician_id:2
-
-    },
-    {
-        time: Time.current,
-        date: Time.now,
-        patient_id:4,
-        physician_id:5
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:9,
-        physician_id:4
-
-    },
-    {
-        time: Time.current,
-        date: Time.current,
-        patient_id:10,
-        physician_id:3
-
-    },
+    
 ]
 $review_data = [
     {

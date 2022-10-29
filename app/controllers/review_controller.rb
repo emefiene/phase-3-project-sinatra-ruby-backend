@@ -6,10 +6,10 @@ class ReviewController < Sinatra::Base
     review.to_json
   end
 
-  get "/review/:patient_id" do
-    review = Review.find_by_patient_id(params[:patient_id])
-    review.to_json
-  end
+  # get "/review/:patient_id" do
+  #   review = Review.find_by_patient_id(params[:patient_id])
+  #   review.to_json
+  # end
 
   post "/review/:id/post" do
     review = Review.create(id_params)
@@ -21,6 +21,7 @@ class ReviewController < Sinatra::Base
     review.destroy
   end
 
+  private 
 
   def get_params
     {comments:params[:comments], time:params[:time], patient_id:params[:patient_id]}

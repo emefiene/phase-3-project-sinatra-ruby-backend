@@ -31,7 +31,8 @@ class ApplicationController < Sinatra::Base
     patients = Patient.find(params[:id])
     patients.destroy
   end
-
+   
+  private
   def get_params
     {name:params[:name], email:params[:email], address:params[:address], age:params[:age], phone:params[:phone]}
   end

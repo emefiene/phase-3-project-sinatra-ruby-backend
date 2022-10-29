@@ -12,15 +12,8 @@ class PhysicianController < Sinatra::Base
         physicians.to_json
     end
   
-  
     post "/physicians" do
       physicians = Physician.create(get_params)
-      physicians.to_json
-    end
-    
-    patch "/physicians/:id" do
-      physicians = Physician.find(params[:id])
-      physicians.update(get_params)
       physicians.to_json
     end
     
@@ -28,7 +21,8 @@ class PhysicianController < Sinatra::Base
       physicians = Physician.find(params[:id])
       physicians.destroy
     end
-  
+    
+    private
     def get_params
       {image_url:params[:image_url], name:params[:name], specialty:params[:specialty], phone:params[:phone]}
     end

@@ -6,7 +6,6 @@ class Patients < ActiveRecord::Migration[6.1]
         t.string :address
         t.string :age
         t.string :phone
-        t.string :symptoms
       end
   end
 end
