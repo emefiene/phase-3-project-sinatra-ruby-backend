@@ -19,15 +19,6 @@ class AppointmentController < Sinatra::Base
         )    
     end
     
-    # get "/appointment/:patient_id" do
-    #   appointment = Appointment.find_by_patient_id(params[:patient_id])
-    #   appointment.to_json
-    # end
-
-    # post "/appointment" do
-    #   appointment = Appointment.create(get_params)
-    #   appointment.to_json
-    # end
     
     post "/appointment/:id/schedule" do
       appointment = Appointment.create(id_params)
