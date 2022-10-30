@@ -1,7 +1,6 @@
 class PhysicianController < Sinatra::Base
     set :default_content_type, 'application/json'
-    
-    # Add your routes here
+  
     get "/physicians" do
         physicians = Physician.all
         physicians.to_json

@@ -5,12 +5,6 @@ class ReviewController < Sinatra::Base
     review = Review.all
     review.to_json
   end
-
-  # get "/review/:patient_id" do
-  #   review = Review.find_by_patient_id(params[:patient_id])
-  #   review.to_json
-  # end
-
   post "/review/:id/post" do
     review = Review.create(id_params)
     review.to_json
