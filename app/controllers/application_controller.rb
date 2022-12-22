@@ -16,27 +16,11 @@ class ApplicationController < Sinatra::Base
   
   end
 
-  post "/review/:id/post" do
+  post "/review/:id" do
     review = Review.create(id_params)
     review.to_json
   end
   
-  get "/patients/:id" do
-    patients = Patient.find(params[:id])
-    patients.to_json(
-      include: {
-        reviews: {
-          only:[
-            :comments,
-            :patient_id
-          ]
-        }
-     }
-      )
-  end
-
-  
-
   post "/patients" do
     patients = Patient.create(get_params)
     patients.to_json
